@@ -9,7 +9,7 @@ def main(argv):
     prefix = "python /u/cos333/Asgt1Solution/ref_reg.pyc "
     suffix = ["-d ", "-n ", "-a ", "-t "]
 
-    letters = map(chr, range(65, 91))
+    letters = "abcdefghijklmnopqrstuvwxyz"
     departments = ["AAS", "AFS", "ANT", "CBE", "CEE", "CHI", "CHM", "CLA", "COM",
                    "COS", "CWR", "FIN", "FRS", "HIN", "GSS", "THR", "bis", "sml", "vis"]
     words = ["intro", "science", "c_s", "c%s",
@@ -19,9 +19,9 @@ def main(argv):
     for department in departments:
         os.system(prefix + suffix[0] + department)
 
-    print("Testing -n from 100 to 200")
-    for i in range(100, 201):
-        os.system(prefix + suffix[1] + str(i))
+    # print("Testing -n from 100 to 200")
+    # for i in range(100, 201):
+    #     os.system(prefix + suffix[1] + str(i))
 
     print("Testing -n 594 and w/ a letter and -a w/ a letter")
     for letter in letters:

@@ -9,15 +9,15 @@ def main(argv):
     prefix = "python reg.py "
     suffix = ["-d ", "-n ", "-a ", "-t "]
 
-    letters = map(chr, range(65, 91))
+    letters = "abcdefghijklmnopqrstuvwxyz"
     departments = ["AAS", "AFS", "ANT", "CBE", "CEE", "CHI", "CHM", "CLA", "COM",
                    "COS", "CWR", "FIN", "FRS", "HIN", "GSS", "THR", "bis", "sml", "vis"]
     words = ["intro", "science", "c_s", "c%s",
              "c%_s", "title", "music", "history"]
 
-    print("Testing -d department")
-    for department in departments:
-        os.system(prefix + suffix[0] + department)
+    # print("Testing -d department")
+    # for department in departments:
+    #     os.system(prefix + suffix[0] + department)
 
     print("Testing -n from 100 to 200")
     for i in range(100, 201):
