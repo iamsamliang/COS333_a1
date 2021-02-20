@@ -16,6 +16,7 @@ def main(argv):
              "c%_s", "title", "music", "history"]
 
     for department in departments:
+        os.system("echo testing -d with departments")
         os.system(prefix + suffix[0] + department)
 
     # print("Testing -n from 100 to 200")
@@ -23,11 +24,15 @@ def main(argv):
     #     os.system(prefix + suffix[1] + str(i))
 
     for letter in letters:
+        os.system("echo testing -n with 594 and a letter")
         os.system(prefix + suffix[1] + "594" + letter)
+        os.system("echo testing -n with a letter")
         os.system(prefix + suffix[1] + letter)
+        os.system("echo testing -a with a letter")
         os.system(prefix + suffix[2] + letter)
 
     for word in words:
+        os.system("echo testing -t with a word")
         os.system(prefix + suffix[3] + word)
 
 
