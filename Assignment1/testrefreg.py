@@ -19,9 +19,9 @@ def main(argv):
         os.system("echo testing -d with departments")
         os.system(prefix + suffix[0] + department)
 
-    # print("Testing -n from 100 to 200")
-    # for i in range(100, 201):
-    #     os.system(prefix + suffix[1] + str(i))
+    print("Testing -n from 100 to 200")
+    for i in range(100, 201):
+        os.system(prefix + suffix[1] + str(i))
 
     for letter in letters:
         os.system("echo testing -n with 594 and a letter")

@@ -57,7 +57,6 @@ def main(argv):
         if args.d:
             sql_command += " AND dept LIKE ? ESCAPE '#'"
             result = special_char_mod(args.d[0])
-            print(result)
             arg_arr.append("%" + result + "%")
 
         if args.n:
