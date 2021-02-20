@@ -49,8 +49,8 @@ def main(argv):
 
     # -d dept -n crsnum
     for dept in departments:
-        for i in range(300, 400)
-        os.system(prefix + suffix[0] + dept + suffix[1] + str(i))
+        for i in range(300, 400):
+            os.system(prefix + suffix[0] + dept + suffix[1] + str(i))
 
     # -d dept -a area
     for dept in departments:
@@ -64,8 +64,8 @@ def main(argv):
 
     # -n crsnum -a area
     for letter in letters:
-        for i in range(300, 400)
-        os.system(prefix + suffix[2] + letter + suffix[1] + str(i))
+        for i in range(300, 400):
+            os.system(prefix + suffix[2] + letter + suffix[1] + str(i))
 
     # -n crsnum -t title
     for i in range(200, 300):
