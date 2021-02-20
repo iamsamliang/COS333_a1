@@ -15,17 +15,21 @@ def main(argv):
     words = ["intro", "science", "c_s", "c%s",
              "c%_s", "title", "music", "history"]
 
+    print("Testing -d department")
     for department in departments:
         os.system(prefix + suffix[0] + department)
 
-    for i in range(100, 601):
+    print("Testing -n from 100 to 200")
+    for i in range(100, 201):
         os.system(prefix + suffix[1] + str(i))
 
+    print("Testing -n 594 and w/ a letter and -a w/ a letter")
     for letter in letters:
         os.system(prefix + suffix[1] + "594" + letter)
         os.system(prefix + suffix[1] + letter)
         os.system(prefix + suffix[2] + letter)
 
+    print("Testing -t")
     for word in words:
         os.system(prefix + suffix[3] + word)
 
