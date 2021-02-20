@@ -6,11 +6,9 @@ def main(argv):
     prefix = "python /u/cos333/Asgt1Solution/ref_reg.pyc "
     suffix = ["-d ", "-n ", "-a ", "-t "]
 
-    letters = "ghijklmn"
-    departments = ["ANT", "CBE", "CHI", "COM",
-                   "COS", "FIN", "HIN", "sml", "vis"]
-    words = ["intro", "science", "c_s", "c%s",
-             "c%_s", "music", "history"]
+    letters = "dgips"
+    departments = ["MAT", "CHI", "COS", "HIN", "vis"]
+    words = ["intro", "science", "c_s", "c%s", "c%_s", "history"]
 
     os.system(prefix)
 
@@ -19,7 +17,7 @@ def main(argv):
         os.system(prefix + suffix[0] + department)
 
     # -n crsnum
-    for i in range(100, 110):
+    for i in range(100, 105):
         os.system(prefix + suffix[1] + str(i))
 
     # -n crsnum
@@ -47,7 +45,7 @@ def main(argv):
 
     # -d dept -n crsnum
     for dept in departments:
-        for i in range(300, 311):
+        for i in range(300, 306):
             os.system(prefix + suffix[0] + dept + " " + suffix[1] + str(i))
 
     # -d dept -a area
@@ -62,11 +60,11 @@ def main(argv):
 
     # -n crsnum -a area
     for letter in letters:
-        for i in range(315, 326):
+        for i in range(315, 321):
             os.system(prefix + suffix[2] + letter + " " + suffix[1] + str(i))
 
     # -n crsnum -t title
-    for i in range(210, 221):
+    for i in range(210, 216):
         for word in words:
             os.system(prefix + suffix[1] + str(i) + " " + suffix[3] + word)
 
@@ -77,14 +75,14 @@ def main(argv):
 
     # -d dept -n crsnum -a area
     for dept in departments:
-        for i in range(441, 447):
+        for i in range(441, 446):
             for letter in letters:
                 os.system(prefix + suffix[0] + dept + " " +
                           suffix[1] + str(i) + " " + suffix[2] + letter)
 
     # -d dept -n crsnum -t title
     for dept in departments:
-        for i in range(250, 256):
+        for i in range(250, 255):
             for word in words:
                 os.system(prefix + suffix[0] + dept + " " +
                           suffix[1] + str(i) + " " + suffix[3] + word)
@@ -98,14 +96,14 @@ def main(argv):
 
     # -t title -n crsnum -a area
     for word in words:
-        for i in range(481, 487):
+        for i in range(481, 485):
             for letter in letters:
                 os.system(prefix + suffix[3] + word + " " +
                           suffix[1] + str(i) + " " + suffix[2] + letter)
 
     # -t title -n crsnum -a area -d dept
     for word in words:
-        for i in range(310, 316):
+        for i in range(310, 315):
             for letter in letters:
                 for dept in departments:
                     os.system(prefix + suffix[3] + word + " " + suffix[1] +
