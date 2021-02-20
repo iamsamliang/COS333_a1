@@ -55,24 +55,25 @@ def main(argv):
         arg_arr = []
 
         if args.d:
-            sql_command += " AND dept LIKE ?"
-            args.d = special_char_mod(args.d)
-            arg_arr.append("%" + args.d + "%")
+            sql_command += " AND dept LIKE ? ESCAPE '#'"
+            result = special_char_mod(args.d[0])
+            print(result)
+            arg_arr.append("%" + result + "%")
 
         if args.n:
-            sql_command += " AND coursenum LIKE ?"
-            args.n = special_char_mod(args.n)
-            arg_arr.append("%" + args.n + "%")
+            sql_command += " AND coursenum LIKE ? ESCAPE '#'"
+            result = special_char_mod(args.n[0])
+            arg_arr.append("%" + result + "%")
 
         if args.a:
-            sql_command += " AND area LIKE ?"
-            args.a = special_char_mod(args.a)
-            arg_arr.append("%" + args.a + "%")
+            sql_command += " AND area LIKE ? ESCAPE '#'"
+            result = special_char_mod(args.a[0])
+            arg_arr.append("%" + result + "%")
 
         if args.t:
             sql_command += " AND title LIKE ? ESCAPE '#'"
-            args.t = special_char_mod(args.t)
-            arg_arr.append("%" + args.t + "%")
+            result = special_char_mod(args.t[0])
+            arg_arr.append("%" + result + "%")
 
         sql_command += " ORDER BY dept ASC, coursenum ASC, classid ASC"
 
