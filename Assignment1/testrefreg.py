@@ -6,7 +6,7 @@ import random
 
 def main(argv):
     random.seed()
-    prefix = "python /u/cos333/Asgt1Solution/ref_regdetails.pyc "
+    prefix = "python /u/cos333/Asgt1Solution/ref_reg.pyc "
     suffix = ["-d ", "-n ", "-a ", "-t "]
 
     letters = map(chr, range(65, 91))
