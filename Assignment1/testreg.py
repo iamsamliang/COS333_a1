@@ -18,8 +18,8 @@ def main(argv):
     for department in departments:
         os.system(prefix + suffix[0] + department)
 
-    for _ in range(100):
-        os.system(prefix + suffix[1] + str(random.randint(100, 600)))
+    for i in range(100, 601):
+        os.system(prefix + suffix[1] + str(i))
 
     for letter in letters:
         os.system(prefix + suffix[1] + "594" + letter)
