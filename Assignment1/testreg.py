@@ -6,11 +6,11 @@ def main(argv):
     prefix = "python reg.py "
     suffix = ["-d ", "-n ", "-a ", "-t "]
 
-    letters = "abcdefghijklmnopqrstuvwxyz"
-    departments = ["AAS", "AFS", "ANT", "CBE", "CEE", "CHI", "CHM", "CLA", "COM",
-                   "COS", "CWR", "FIN", "FRS", "HIN", "GSS", "THR", "bis", "sml", "vis"]
+    letters = "ghijklmn"
+    departments = ["ANT", "CBE", "CHI", "COM",
+                   "COS", "FIN", "HIN", "sml", "vis"]
     words = ["intro", "science", "c_s", "c%s",
-             "c%_s", "title", "music", "history"]
+             "c%_s", "music", "history"]
 
     os.system(prefix)
 
