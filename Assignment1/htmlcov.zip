@@ -28,7 +28,13 @@ python reg.py -t Babe Ruth's Baseball Batting Prep (Tests specific course names
 python reg.py -t Computer and Electronic Music through Programming, 
                             Performance, and Composition (Tests long course names)
 
-python reg.py -d COS
+python reg.py -d COS (Tests the d argument with a valid dept name)
+
+python reg.py -d TNT (Tests the d argument with an invalid dept name)
+
+python reg.py -d COS -n 126 (Tests for a course with multiple class ids)
+
+python reg.py -t Re:Staging the Greeks (Tests for courses with multiple depts)
 
 -m coverage run -p reg.py arguments
 
