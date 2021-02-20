@@ -1,5 +1,7 @@
 python reg.py (Tests default case to see if all data is output)
 
+python reg.py -h (Tests the help flag)
+
 python reg.py -n 365 (Tests numbers with multiple courses assigned to them) 
 
 python reg.py n 365 (Tests when the user fails to include the dash symbol 

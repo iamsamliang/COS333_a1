@@ -96,7 +96,7 @@ def main(argv):
 
         row = cursor.fetchone()
         while row is not None:
-            unformatted_str = "{:>5} {:>4} {:>6} {:>4} {:>5}".format(
+            unformatted_str = "{:>5} {:>4} {:>6} {:>4} {}".format(
                 str(row[0]), str(row[1]), str(row[2]), str(row[3]), str(row[4]))
 
             print(wrapper.fill(unformatted_str))
