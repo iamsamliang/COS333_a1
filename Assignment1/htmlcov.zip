@@ -1,0 +1,46 @@
+python reg.py (Tests default case to see if all data is output)
+
+python reg.py -n 365 (Tests numbers with multiple courses assigned to them) 
+
+python reg.py n 365 (Tests when the user fails to include the dash symbol 
+                    before specifying the optional argument)
+
+python reg.py -n 259A (Tests if the number flag argument also works with
+                        valid course numbers with letters in them)                    
+
+python reg.py -n 365 -a qr (Tests ordering of arguments, in conjunction with
+                            next test) 
+
+python reg.py -a qr -n 365 (Tests ordering of arguments, in conjunction with
+                            next test) 
+
+python reg.py -a Qr (Tests the functionality of the area optional argument)
+
+python reg.py -a Ms (tests the area argument on non-existent areas)
+
+python reg.py -t economics (Tests the title argument)
+
+python reg.py -t Algorithms and Data Structures (Tests specific course names that exist)
+
+python reg.py -t Babe Ruth's Baseball Batting Prep (Tests specific course names 
+                                                    that don't exist)
+
+python reg.py -t Computer and Electronic Music through Programming, 
+                            Performance, and Composition (Tests long course names)
+
+python reg.py -d COS
+
+-m coverage run -p reg.py arguments
+
+python regdetails.py 8321 
+
+python regdetails.py 9032 (Tests multiple departments and numbers, 
+                            Tests multiple professors)
+
+python regdetails.py 9034 (Tests class codes which are not listed in the database)
+
+python regdetails.py abc123 (Tests invalid class codes)
+
+python regdetails.py (Tests no argument case error)
+
+python regdetails.py -h (Tests help message output)
