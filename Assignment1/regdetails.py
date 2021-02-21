@@ -45,7 +45,8 @@ def main(argv):
         courseid = str(row[0])
         wrapper = textwrap.TextWrapper(
             width=72, break_long_words=False)
-
+        wrapper_spec = textwrap.TextWrapper(
+            width=72)
         print(wrapper.fill(f"Course Id: {courseid}"))
         print()
         print(f"Days: {str(row[1])}")
@@ -71,7 +72,7 @@ def main(argv):
         print()
         print(wrapper.fill(f"Description: {str(firstrow[10])}"))
         print()
-        print(wrapper.fill(f"Prerequisites: {str(firstrow[11])}"))
+        print(wrapper_spec.fill(f"Prerequisites: {str(firstrow[11])}"))
         print()
 
         cursor.execute(sql_command2, [courseid])
