@@ -1,0 +1,22 @@
+Assignment Number: 1
+Name: Sam Liang
+Partner Name: Sumanth Maddirala
+Assistance: Visited Dondero Office Hours
+Sources used: Course site (lectures, slides, handouts), 
+argparse manual (https://docs.python.org/3/library/argparse.html), 
+textwrap manual (https://docs.python.org/3/library/textwrap.html)
+Hours spent: 20 hours
+
+Sam Contributions: Created the base template for the assignment code and did research on argparse and textwrap modules. Also created the try and while loops in the reg.py and regdetails.py 
+modules and did the majority of the work with the textwrapper. Created the majority of the sql
+prepared statements and conceptualized the stress testing modules. Also handled cases for special characters so that sql would interpret _ and % as characters instead of special characters by writing the special_char_mod function. Utilized the argparse object to get -h functionality, add command line arguments, and grab the argument values. Wrote code to handle the different cases when certain arguments are passed in and adding proper SQL statements to the running SQL prepared statement. For regdetails.py, did similar things and added the code to grab professor names separately because some courses have no professors. Did testing w/ Sumanth on reg.py and regdetails.py
+
+Sumanth Partner contributions: Created the majority of the print statements and ran the majority of debugging statements. Responsible for most of the table formatting and error statements in both files, as well as the majority of the statement tests and stress testing modules. Handled most of the commenting and exception statement prints. Also responsible for generating the m coverage reports and most of the readme. Did the testing equally with Sam on reg.py and regdetails.py
+
+Suggestions: more prior instruction on the arparse and textwrap functionality, and more examples
+of sequel statements would be helpful. more specific requirements for how to test the code 
+sufficiently would have also been helpful. overall, this was a good assignment for getting
+practice with how to write sequel statements to access data from databases and getting better with 
+using text-wrappers in python.
+
+Note: One thing we noted was that the assignment specifications stated that for regdetails.py, no line could be wrapped around within a word. We initially did this when creating the textwrapper object with the break_long_words=False option. However, using extensive testing, we saw that because of this the output for our program and the reference program was different for the prerequisites only for ART 455. Our program did not break the URL link because the textwrapper though it was one word. The reference program did break the URL link within a word. Seeing that the only difference was this, we decided to try setting break_long_words=True, the default option, for our textwrapper object. After this change, diff showed no difference in output for ART 455, so we kept this option.
