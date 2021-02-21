@@ -48,11 +48,11 @@ def main(argv):
 
         print(wrapper.fill(f"Course Id: {courseid}"))
         print()
-        print(wrapper.fill(f"Days: {str(row[1])}"))
-        print(wrapper.fill(f"Start time: {str(row[2])}"))
-        print(wrapper.fill(f"End time: {str(row[3])}"))
-        print(wrapper.fill(f"Building: {str(row[4])}"))
-        print(wrapper.fill(f"Room: {str(row[5])}"))
+        print(f"Days: {str(row[1])}")
+        print(f"Start time: {str(row[2])}")
+        print(f"End time: {str(row[3])}")
+        print(f"Building: {str(row[4])}")
+        print(f"Room: {str(row[5])}")
         print()
         print(
             wrapper.fill(f"Dept and Number: {str(row[6])} {str(row[7])}"))
@@ -64,7 +64,8 @@ def main(argv):
             row = cursor.fetchone()
 
         print()
-        print(wrapper.fill(f"Area: {str(firstrow[8])}"))
+        # print(wrapper.fill("Area: " + str(firstrow[8])))
+        print(f"Area: {str(firstrow[8])}")
         print()
         print(wrapper.fill(f"Title: {str(firstrow[9])}"))
         print()
