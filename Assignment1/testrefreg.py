@@ -3,7 +3,7 @@ from sys import argv, stderr
 
 
 def main(argv):
-    prefix = "python /u/cos333/Asgt1Solution/ref_reg.pyc "
+    prefix = "python -m coverage run -p /u/cos333/Asgt1Solution/ref_reg.pyc "
     suffix = ["-d ", "-n ", "-a ", "-t "]
 
     letters = "dgips"
@@ -155,6 +155,11 @@ def main(argv):
     os.system(prefix + "-a '' -n '' -t ''")
     os.system(prefix + "-t '' -n '' -a ''")
     os.system(prefix + "-a '' -n '' -t '' -d ''")
+
+    # changing the name of the database to test database checking code
+    os.system("mv reg.sqlite reg2.sqlite")
+    os.system(prefix)
+    os.system("mv reg2.sqlite reg.sqlite")
 
     # other program boundary testing
     # classes with long descriptions
