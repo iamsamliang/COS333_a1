@@ -3,7 +3,7 @@ from sys import argv, stderr
 
 
 def main(argv):
-    prefix = "python -m coverage run -p reg.py "
+    prefix = "python reg.py "
     suffix = ["-d ", "-n ", "-a ", "-t "]
 
     letters = "dgips"
@@ -160,11 +160,6 @@ def main(argv):
     os.system("mv reg.sqlite reg2.sqlite")
     os.system(prefix)
     os.system("mv reg2.sqlite reg.sqlite")
-
-    # other program boundary testing
-    # classes with long descriptions
-    # multiple professors
-    # no professors
 
 
 if __name__ == '__main__':
