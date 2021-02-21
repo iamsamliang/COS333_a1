@@ -4,7 +4,7 @@ from sqlite3 import connect
 
 
 def main(argv):
-    prefix = "python regdetails.py "
+    prefix = "python -m coverage run -p regdetails.py "
     DATABASE_NAME = "reg.sqlite"
 
     if not os.path.isfile(DATABASE_NAME):
