@@ -1,0 +1,19 @@
+usage: ref_regdetails.pyc [-h] classid
+ref_regdetails.pyc: error: argument classid: invalid int value: 'abc123'
+usage: ref_regdetails.pyc [-h] classid
+ref_regdetails.pyc: error: the following arguments are required: classid
+/u/cos333/Asgt1Solution/ref_regdetails.pyc: no class with classid 9034 exists
+usage: ref_regdetails.pyc [-h] classid
+ref_regdetails.pyc: error: unrecognized arguments: 9032
+usage: ref_regdetails.pyc [-h] classid
+ref_regdetails.pyc: error: unrecognized arguments: 9032 8320 1021
+/u/cos333/Asgt1Solution/ref_regdetails.pyc: no class with classid 1000000000 exists
+/u/cos333/Asgt1Solution/ref_regdetails.pyc: no class with classid -1000000000 exists
+/u/cos333/Asgt1Solution/ref_regdetails.pyc: no class with classid -1 exists
+/u/cos333/Asgt1Solution/ref_regdetails.pyc: no class with classid 1 exists
+/u/cos333/Asgt1Solution/ref_regdetails.pyc: no class with classid 0 exists
+usage: ref_regdetails.pyc [-h] classid
+ref_regdetails.pyc: error: argument classid: invalid int value: 'astz'
+usage: ref_regdetails.pyc [-h] classid
+ref_regdetails.pyc: error: argument classid: invalid int value: ''
+/u/cos333/Asgt1Solution/ref_regdetails.pyc: database reg.sqlite not found

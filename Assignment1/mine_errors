@@ -1,0 +1,34 @@
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: -dd
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: -z
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: -ads
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: -A
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: -B
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: -a 
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: -t 
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: argument -a: expected 1 argument
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: argument -a: expected 1 argument
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: argument -t: expected 1 argument
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: la
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: and Electronic Music through Programming, Performance, and Composition
+sh: -c: line 0: syntax error near unexpected token `('
+sh: -c: line 0: `python reg.py -t Topics in Policy Analysis (Half-Term): Changing Architecture of Int'l Financial Regulation'
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: the Greeks
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: Integrated, Quantitative Introduction to the Natural Sciences II
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: Trade Policy
+usage: reg.py [-h] [-d dept] [-n num] [-a area] [-t title]
+reg.py: error: unrecognized arguments: of Games

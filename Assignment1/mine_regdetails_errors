@@ -1,0 +1,19 @@
+usage: regdetails.py [-h] classid
+regdetails.py: error: argument classid: invalid int value: 'abc123'
+usage: regdetails.py [-h] classid
+regdetails.py: error: the following arguments are required: classid
+regdetails.py: no class with classid 9034 exists
+usage: regdetails.py [-h] classid
+regdetails.py: error: unrecognized arguments: 9032
+usage: regdetails.py [-h] classid
+regdetails.py: error: unrecognized arguments: 9032 8320 1021
+regdetails.py: no class with classid 1000000000 exists
+regdetails.py: no class with classid -1000000000 exists
+regdetails.py: no class with classid -1 exists
+regdetails.py: no class with classid 1 exists
+regdetails.py: no class with classid 0 exists
+usage: regdetails.py [-h] classid
+regdetails.py: error: argument classid: invalid int value: 'astz'
+usage: regdetails.py [-h] classid
+regdetails.py: error: argument classid: invalid int value: ''
+regdetails.py: database reg.sqlite not found

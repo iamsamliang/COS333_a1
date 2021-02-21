@@ -1,0 +1,34 @@
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: -dd
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: -z
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: -ads
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: -A
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: -B
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: -a 
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: -t 
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: argument -a: expected 1 argument
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: argument -a: expected 1 argument
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: argument -t: expected 1 argument
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: la
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: and Electronic Music through Programming, Performance, and Composition
+sh: -c: line 0: syntax error near unexpected token `('
+sh: -c: line 0: `python /u/cos333/Asgt1Solution/ref_reg.pyc -t Topics in Policy Analysis (Half-Term): Changing Architecture of Int'l Financial Regulation'
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: the Greeks
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: Integrated, Quantitative Introduction to the Natural Sciences II
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: Trade Policy
+usage: ref_reg.pyc [-h] [-d dept] [-n num] [-a area] [-t title]
+ref_reg.pyc: error: unrecognized arguments: of Games
