@@ -7,7 +7,7 @@ def main(argv):
     prefix = "python /u/cos333/Asgt1Solution/ref_regdetails.pyc "
     DATABASE_NAME = "reg.sqlite"
 
-    if not path.isfile(DATABASE_NAME):
+    if not os.path.isfile(DATABASE_NAME):
         print(f'{argv[0]}: database reg.sqlite not found', file=stderr)
         exit(1)
 

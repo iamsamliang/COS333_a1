@@ -7,7 +7,7 @@ def main(argv):
     prefix = "python regdetails.py "
     DATABASE_NAME = "reg.sqlite"
 
-    if not path.isfile(DATABASE_NAME):
+    if not os.path.isfile(DATABASE_NAME):
         print(f'{argv[0]}: database reg.sqlite not found', file=stderr)
         exit(1)
 
@@ -21,6 +21,7 @@ def main(argv):
 
         # running regdetails.py on every classid
         row = cursor.fetchone()
+        print(row)
         while row is not None:
             os.system(prefix + str(row[0]))
             row = cursor.fetchone()
