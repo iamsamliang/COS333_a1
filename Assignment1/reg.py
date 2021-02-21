@@ -23,11 +23,6 @@ def special_char_mod(input_str: str) -> str:
 def main(argv):
     DATABASE_NAME = "reg.sqlite"
 
-    if len(argv) < 1 or len(argv) > 9:
-        print(
-            'Usage: python reg.py [-d dept] [-n num] [-a area] [-t title]', file=stderr)
-        exit(2)
-
     if not path.isfile(DATABASE_NAME):
         print(f'{argv[0]}: database reg.sqlite not found', file=stderr)
         exit(1)
