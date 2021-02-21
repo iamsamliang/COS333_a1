@@ -21,7 +21,6 @@ def main(argv):
 
         # running regdetails.py on every classid
         row = cursor.fetchone()
-        print(row)
         while row is not None:
             os.system(prefix + str(row[0]))
             row = cursor.fetchone()
