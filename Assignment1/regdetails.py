@@ -31,14 +31,14 @@ def main(argv):
         sql_command1 = "SELECT classes.courseid, classes.days, classes.starttime, classes.endtime, classes.bldg, classes.roomnum, crosslistings.dept, crosslistings.coursenum, courses.area, courses.title, courses.descrip, courses.prereqs FROM classes, crosslistings, courses WHERE classes.courseid = courses.courseid AND crosslistings.courseid = courses.courseid AND classid=? ORDER BY dept ASC, coursenum ASC"
 
         # fetching professors if any
-        sql_command2 = "SELECT profs.profname FROM coursesprofs, profs WHERE coursesprofs.courseid=? AND coursesprofs.profid=profs.profid"
+        sql_command2 = "SELECT profs.profname FROM coursesprofs, profs WHERE coursesprofs.courseid=? AND coursesprofs.profid=profs.profid ORDER BY profname"
 
         cursor.execute(sql_command1, args.classid)
         row = cursor.fetchone()
 
         if row is None:
             print(f"{argv[0]}: no class with classid " +
-                  str(args.classid[0]) + " exists")
+                  str(args.classid[0]) + " exists", file=stderr)
             exit(1)
 
         firstrow = row

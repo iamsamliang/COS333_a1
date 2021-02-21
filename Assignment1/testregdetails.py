@@ -26,9 +26,6 @@ def main(argv):
             os.system(prefix + str(row[0]))
             row = cursor.fetchone()
 
-        cursor.close()
-        connection.close()
-
         # tests the help argument
         os.system(prefix + "-h")
 
@@ -70,6 +67,9 @@ def main(argv):
         os.system("mv reg.sqlite reg2.sqlite")
         os.system(prefix + str(8617))
         os.system("mv reg2.sqlite reg.sqlite")
+
+        cursor.close()
+        connection.close()
 
 # exit(2) case handled by arg_parse module, exit(1) case handled on lines 11-18
 # If some other program has corrupted the reg.sqlite database file
